@@ -1,4 +1,4 @@
 package BoardElementClasses;
 public enum ElementType {
-    NUMBER, BOMB
+    NUMBER, MINE
 }
