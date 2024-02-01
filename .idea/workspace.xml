@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Created enum for BoardElement type">
-      <change afterPath="$PROJECT_DIR$/src/Mine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number.java" afterDir="false" />
+    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Moved BoardElement classes to separate folder">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardElementClasses/ElementType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardElementClasses/ElementType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +53,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -63,6 +70,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.BoardElementTest.test02">
+    <configuration name="BoardElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <option name="PACKAGE_NAME" value="BoardElementClasses" />
+      <option name="MAIN_CLASS_NAME" value="BoardElementClasses.BoardElementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardElementTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BoardElementClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BoardElementClasses" />
+      <option name="MAIN_CLASS_NAME" value="BoardElementClasses.BoardElementTest" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BoardElementTest.test02" />
+        <item itemvalue="JUnit.BoardElementTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706813858462</updated>
-      <workItem from="1706813859571" duration="1972000" />
+      <workItem from="1706813859571" duration="2981000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -104,7 +144,31 @@
       <option name="project" value="LOCAL" />
       <updated>1706815825869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created Mine class as extension of BoardElement class">
+      <option name="closed" value="true" />
+      <created>1706815938919</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706815938919</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created Number class as extension of BoardElement class">
+      <option name="closed" value="true" />
+      <created>1706815959999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706815959999</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Moved BoardElement classes to separate folder">
+      <option name="closed" value="true" />
+      <created>1706816187377</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706816187377</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +178,9 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Created abstract BoardElement class" />
     <MESSAGE value="Created enum for BoardElement type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created enum for BoardElement type" />
+    <MESSAGE value="Created Mine class as extension of BoardElement class" />
+    <MESSAGE value="Created Number class as extension of BoardElement class" />
+    <MESSAGE value="Moved BoardElement classes to separate folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved BoardElement classes to separate folder" />
   </component>
 </project>
