@@ -24,4 +24,31 @@ public class BoardElementTest {
         assertFalse(number.getFlag());
     }
 
+    /** Test makeVisible()-function */
+    @Test
+    public void test03() {
+        Number number = new Number(ElementType.NUMBER, 5);
+        assertFalse(number.getVisibility());
+        number.makeVisible();
+        assertTrue(number.getVisibility());
+    }
+
+    /** Test addFlag()-function */
+    @Test
+    public void test04() {
+        Number number = new Number(ElementType.NUMBER, 5);
+        assertFalse(number.getFlag());
+        number.addFlag();
+        assertTrue(number.getFlag());
+    }
+
+    /** Test removeFlag()-function */
+    @Test
+    public void test05() {
+        Number number = new Number(ElementType.NUMBER, 5);
+        number.addFlag();
+        number.removeFlag();
+        assertFalse(number.getFlag());
+    }
+
 }
