@@ -1,3 +1,4 @@
+package BoardElementClasses;
 public class Number extends BoardElement {
     protected int value;
     public Number(ElementType elementType, int value) {
