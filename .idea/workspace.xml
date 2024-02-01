@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Added test class for BoardElement classes and functions">
-      <change beforePath="$PROJECT_DIR$/src/BoardElementClasses/BoardElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardElementClasses/BoardElementTest.java" afterDir="false" />
+    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Added tests for BoardElement functions">
+      <change afterPath="$PROJECT_DIR$/src/GameBoardClasses/GameDifficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -50,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BoardElementTest.executor": "Run",
     "JUnit.BoardElementTest.test02.executor": "Run",
     "JUnit.BoardElementTest.test05.executor": "Run",
     "JUnit.TestClass.executor": "Run",
@@ -134,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706813858462</updated>
-      <workItem from="1706813859571" duration="3547000" />
+      <workItem from="1706813859571" duration="4544000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -200,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706817107916</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added tests for BoardElement functions">
+      <option name="closed" value="true" />
+      <created>1706817493451</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817493451</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +225,7 @@
     <MESSAGE value="Moved BoardElement classes to separate folder" />
     <MESSAGE value="Renamed BOMB enum to MINE" />
     <MESSAGE value="Added test class for BoardElement classes and functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test class for BoardElement classes and functions" />
+    <MESSAGE value="Added tests for BoardElement functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for BoardElement functions" />
   </component>
 </project>
