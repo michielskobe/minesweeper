@@ -89,5 +89,5 @@ public class GameBoard {
     public GameDifficulty getDifficulty() {
         return difficulty;
     }
-
+    public BoardElement[][] getBoard(){return board;}
 }
