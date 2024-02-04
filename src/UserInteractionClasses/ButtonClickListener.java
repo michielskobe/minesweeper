@@ -49,7 +49,7 @@ public class ButtonClickListener implements MouseListener {
             button.setBackground(Color.WHITE);
             if (element.getElementType().equals(ElementType.MINE)){
                 button.setText("\uD83D\uDCA3");
-                openAllTiles();
+                endGameWithVictory(false);
                 JOptionPane.showMessageDialog(null, "GAME OVER");
 
             }
@@ -80,7 +80,7 @@ public class ButtonClickListener implements MouseListener {
                     element.addFlag();
                     gameBoard.decrementNumberOfFlags();
                     if (checkForVictory()){
-                        openAllTiles();
+                        endGameWithVictory(true);
                         JOptionPane.showMessageDialog(null, "Congratulations, you won!");
                     }
                     else {
@@ -124,21 +124,31 @@ public class ButtonClickListener implements MouseListener {
         }
     }
 
-    public void openAllTiles(){
+    public void endGameWithVictory(boolean isVictory){
         for(int m = 0; m<gameBoard.getRows(); m++) {
             for (int n = 0; n < gameBoard.getColumns(); n++) {
                 BoardElement element = gameBoard.getBoard()[m][n];
                 JButton button = buttons[m][n];
-                element.makeVisible();
-                button.setBackground(Color.WHITE);
                 button.setEnabled(false);
-                if (element.getValue() == -1){
-                    button.setText("\uD83D\uDCA3");
-                } else if (element.getValue() == 0) {
-                    button.setText("");
+                if (isVictory){
+                    element.makeVisible();
+                    button.setBackground(Color.WHITE);
+                    if (element.getValue() == -1){
+                        button.setText("\uD83D\uDCA3");
+                    } else if (element.getValue() == 0) {
+                        button.setText("");
+                    }
+                    else {
+                        button.setText(String.valueOf(element.getValue()));
+                    }
                 }
                 else {
-                    button.setText(String.valueOf(element.getValue()));
+                    if (element.getElementType().equals(ElementType.MINE)){
+                        button.setText("\uD83D\uDCA3");
+                        element.makeVisible();
+                        button.setBackground(Color.WHITE);
+                    }
+
                 }
             }
         }
