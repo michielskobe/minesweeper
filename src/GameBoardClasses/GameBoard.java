@@ -10,9 +10,9 @@ public class GameBoard {
     private final BoardElement[][] board;
     private int rows;
     private int columns;
-    private GameDifficulty difficulty;
+    private final GameDifficulty difficulty;
     private int numberOfMines;
-    private int numberOfHints;
+    private final int numberOfHints;
     private int numberOfFlags;
     public GameBoard(GameDifficulty difficulty) {
         this.difficulty = difficulty;
@@ -85,6 +85,12 @@ public class GameBoard {
         return numberOfMines;
     }
     public int getNumberOfFlags(){return numberOfFlags;}
+    public void incrementNumberOfFlags(){
+        numberOfFlags++;
+    }
+    public void decrementNumberOfFlags(){
+        numberOfFlags--;
+    }
     public int getNumberOfHints(){return numberOfHints;}
     public GameDifficulty getDifficulty() {
         return difficulty;
