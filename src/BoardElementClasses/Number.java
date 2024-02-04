@@ -5,5 +5,6 @@ public class Number extends BoardElement {
         super(elementType);
         this.value = value;
     }
+    @Override
     public int getValue(){return value;}
 }
