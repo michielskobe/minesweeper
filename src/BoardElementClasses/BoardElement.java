@@ -21,6 +21,7 @@ public abstract class BoardElement {
     }
     public void addFlag(){flag = true;}
     public void removeFlag(){flag = false;}
-
-
+    public int getValue(){
+        return -1;
+    };
 }
