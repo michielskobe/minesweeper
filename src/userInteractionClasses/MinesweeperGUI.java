@@ -1,7 +1,7 @@
-package UserInteractionClasses;
+package userInteractionClasses;
 
-import GameBoardClasses.GameBoard;
-import GameBoardClasses.GameDifficulty;
+import gameBoardClasses.GameBoard;
+import gameBoardClasses.GameDifficulty;
 
 import javax.swing.*;
 import java.awt.*;

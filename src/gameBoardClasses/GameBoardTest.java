@@ -1,4 +1,4 @@
-package GameBoardClasses;
+package gameBoardClasses;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

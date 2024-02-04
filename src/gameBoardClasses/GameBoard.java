@@ -1,9 +1,9 @@
-package GameBoardClasses;
+package gameBoardClasses;
 
-import BoardElementClasses.BoardElement;
-import BoardElementClasses.ElementType;
-import BoardElementClasses.Mine;
-import BoardElementClasses.Number;
+import boardElementClasses.BoardElement;
+import boardElementClasses.ElementType;
+import boardElementClasses.Mine;
+import boardElementClasses.Number;
 import java.util.Random;
 
 public class GameBoard {

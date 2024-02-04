@@ -1,4 +1,4 @@
-package BoardElementClasses;
+package boardElementClasses;
 public abstract class BoardElement {
     protected ElementType elementType;
     protected boolean flag;

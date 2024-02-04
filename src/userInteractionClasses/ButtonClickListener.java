@@ -1,8 +1,8 @@
-package UserInteractionClasses;
+package userInteractionClasses;
 
-import BoardElementClasses.BoardElement;
-import BoardElementClasses.ElementType;
-import GameBoardClasses.GameBoard;
+import boardElementClasses.BoardElement;
+import boardElementClasses.ElementType;
+import gameBoardClasses.GameBoard;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;

@@ -1,4 +1,4 @@
-import UserInteractionClasses.MinesweeperGUI;
+import userInteractionClasses.MinesweeperGUI;
 
 import javax.swing.*;
 
