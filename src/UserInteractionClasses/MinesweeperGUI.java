@@ -9,17 +9,22 @@ import java.awt.*;
 public class MinesweeperGUI extends JFrame {
 
     public MinesweeperGUI(){
-        initializeUI();
-    }
-
-    private void initializeUI() {
         startGame(GameDifficulty.BEGINNER);
-        //width sizes -> easy: 500, medium: 900, hard: 1600
     }
 
     public void startGame(GameDifficulty difficulty){
+        switch (difficulty) {
+            case BEGINNER -> {
+                setSize(500, 675);
+            }
+            case INTERMEDIATE -> {
+                setSize(900, 675);
+            }
+            case EXPERT -> {
+                setSize(1600, 675);
+            }
+        }
         setTitle("Minesweeper");
-        setSize(500, 675);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GameBoard gameBoard = new GameBoard(difficulty);
