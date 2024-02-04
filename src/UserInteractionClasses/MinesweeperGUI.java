@@ -4,7 +4,6 @@ import GameBoardClasses.GameBoard;
 import GameBoardClasses.GameDifficulty;
 
 import javax.swing.*;
-import javax.swing.border.BevelBorder;
 import java.awt.*;
 
 public class MinesweeperGUI extends JFrame {
