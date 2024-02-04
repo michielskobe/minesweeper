@@ -13,17 +13,15 @@ public class MinesweeperGUI extends JFrame {
     }
 
     private void initializeUI() {
-        setTitle("Minesweeper");
-        setSize(500, 675);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        startGame(GameDifficulty.EASY);
+        startGame(GameDifficulty.EXPERT);
+        //eassy: 500, medium: 900, hard:
     }
 
     public void startGame(GameDifficulty difficulty){
         setTitle("Minesweeper" + difficulty);
-        setVisible(false);
-        setSize(500, 675);
+        setSize(1500, 675);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GameBoard gameBoard = new GameBoard(difficulty);
         JPanel mainPanel = new JPanel(new BorderLayout());
         int rows = gameBoard.getRows();

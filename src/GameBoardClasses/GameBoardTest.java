@@ -8,8 +8,8 @@ public class GameBoardTest {
     /** Test GameBoard object creation on EASY difficulty */
     @Test
     public void test01() {
-        GameBoard gb = new GameBoard(GameDifficulty.EASY);
-        assertEquals(GameDifficulty.EASY, gb.getDifficulty());
+        GameBoard gb = new GameBoard(GameDifficulty.BEGINNER);
+        assertEquals(GameDifficulty.BEGINNER, gb.getDifficulty());
         assertEquals(8, gb.getRows());
         assertEquals(8, gb.getColumns());
         assertEquals(10, gb.getNumberOfMines());
@@ -20,8 +20,8 @@ public class GameBoardTest {
     /** Test GameBoard object creation on MEDIUM difficulty */
     @Test
     public void test02() {
-        GameBoard gb = new GameBoard(GameDifficulty.MEDIUM);
-        assertEquals(GameDifficulty.MEDIUM, gb.getDifficulty());
+        GameBoard gb = new GameBoard(GameDifficulty.INTERMEDIATE);
+        assertEquals(GameDifficulty.INTERMEDIATE, gb.getDifficulty());
         assertEquals(16, gb.getRows());
         assertEquals(16, gb.getColumns());
         assertEquals(40, gb.getNumberOfMines());
@@ -32,8 +32,8 @@ public class GameBoardTest {
     /** Test GameBoard object creation on HARD difficulty */
     @Test
     public void test03() {
-        GameBoard gb = new GameBoard(GameDifficulty.HARD);
-        assertEquals(GameDifficulty.HARD, gb.getDifficulty());
+        GameBoard gb = new GameBoard(GameDifficulty.EXPERT);
+        assertEquals(GameDifficulty.EXPERT, gb.getDifficulty());
         assertEquals(16, gb.getRows());
         assertEquals(30, gb.getColumns());
         assertEquals(99, gb.getNumberOfMines());

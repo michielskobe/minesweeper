@@ -17,17 +17,17 @@ public class GameBoard {
     public GameBoard(GameDifficulty difficulty) {
         this.difficulty = difficulty;
         switch (difficulty) {
-            case EASY -> {
+            case BEGINNER -> {
                 numberOfMines = 10;
                 rows = 8;
                 columns = 8;
             }
-            case MEDIUM -> {
+            case INTERMEDIATE -> {
                 numberOfMines = 40;
                 rows = 16;
                 columns = 16;
             }
-            case HARD -> {
+            case EXPERT -> {
                 numberOfMines = 99;
                 rows = 16;
                 columns = 30;
