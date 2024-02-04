@@ -49,7 +49,9 @@ public class ButtonClickListener implements MouseListener {
             button.setBackground(Color.WHITE);
             if (element.getElementType().equals(ElementType.MINE)){
                 button.setText("\uD83D\uDCA3");
+                openAllTiles();
                 JOptionPane.showMessageDialog(null, "GAME OVER");
+
             }
             else {
                 if (element.getValue() == 0){
@@ -77,7 +79,14 @@ public class ButtonClickListener implements MouseListener {
                 if (!element.getVisibility()){
                     element.addFlag();
                     gameBoard.decrementNumberOfFlags();
-                    button.setText("\uD83D\uDEA9");
+                    if (checkForVictory()){
+                        openAllTiles();
+                        JOptionPane.showMessageDialog(null, "Congratulations, you won!");
+                    }
+                    else {
+                        button.setForeground(Color.red);
+                        button.setText("\uD83D\uDEA9");
+                    }
                     }
                 }
             else {
@@ -113,5 +122,41 @@ public class ButtonClickListener implements MouseListener {
                 }
             }
         }
+    }
+
+    public void openAllTiles(){
+        for(int m = 0; m<gameBoard.getRows(); m++) {
+            for (int n = 0; n < gameBoard.getColumns(); n++) {
+                BoardElement element = gameBoard.getBoard()[m][n];
+                JButton button = buttons[m][n];
+                element.makeVisible();
+                button.setBackground(Color.WHITE);
+                button.setEnabled(false);
+                if (element.getValue() == -1){
+                    button.setText("\uD83D\uDCA3");
+                } else if (element.getValue() == 0) {
+                    button.setText("");
+                }
+                else {
+                    button.setText(String.valueOf(element.getValue()));
+                }
+            }
+        }
+    }
+
+
+    public boolean checkForVictory(){
+        int flaggedMinesCounter = 0;
+        for(int m = 0; m<gameBoard.getRows(); m++) {
+            for (int n = 0; n < gameBoard.getColumns(); n++) {
+                BoardElement element = gameBoard.getBoard()[m][n];
+                if (element.getElementType().equals(ElementType.MINE) && element.getFlag()) {
+                    flaggedMinesCounter++;
+                } else if (!element.getElementType().equals(ElementType.MINE) && element.getFlag()) {
+                    return false;
+                }
+            }
+        }
+        return flaggedMinesCounter == gameBoard.getNumberOfMines();
     }
 }

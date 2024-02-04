@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Removed custom difficulty enum">
-      <change afterPath="$PROJECT_DIR$/src/GameBoardClasses/GameBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameBoardClasses/GameBoardTest.java" afterDir="false" />
+    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Implemented getValue function for Number object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInteractionClasses/ButtonClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInteractionClasses/ButtonClickListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,34 +48,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MinesweeperGUI.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.BoardElementTest.executor": "Run",
-    "JUnit.BoardElementTest.test02.executor": "Run",
-    "JUnit.BoardElementTest.test05.executor": "Run",
-    "JUnit.GameBoardTest.executor": "Run",
-    "JUnit.GameBoardTest.test01.executor": "Run",
-    "JUnit.TestClass.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kobem/Documents/wepm2-minesweeper-master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MinesweeperGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.BoardElementTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardElementTest.test02.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardElementTest.test05.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameBoardTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameBoardTest.test01.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kobem/Documents/wepm2-minesweeper-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.GameBoardTest">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="UserInteractionClasses" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Minesweeper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinesweeperGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MinesweeperGUI" />
       <module name="Minesweeper" />
@@ -89,22 +101,6 @@
       <option name="PACKAGE_NAME" value="BoardElementClasses" />
       <option name="MAIN_CLASS_NAME" value="BoardElementClasses.BoardElementTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardElementTest.test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Minesweeper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BoardElementClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BoardElementClasses" />
-      <option name="MAIN_CLASS_NAME" value="BoardElementClasses.BoardElementTest" />
-      <option name="METHOD_NAME" value="test05" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GameBoardTest" />
         <item itemvalue="JUnit.GameBoardTest.test01" />
         <item itemvalue="JUnit.BoardElementTest" />
         <item itemvalue="Application.MinesweeperGUI" />
-        <item itemvalue="JUnit.BoardElementTest.test05" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +162,12 @@
       <option name="presentableId" value="Default" />
       <updated>1706813858462</updated>
       <workItem from="1706813859571" duration="5546000" />
-      <workItem from="1706887869999" duration="4162000" />
+      <workItem from="1706887869999" duration="5611000" />
+      <workItem from="1707040181861" duration="4508000" />
+      <workItem from="1707046932897" duration="11925000" />
+      <workItem from="1707063443932" duration="2971000" />
+      <workItem from="1707068940080" duration="1645000" />
+      <workItem from="1707073689761" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -256,7 +257,87 @@
       <option name="project" value="LOCAL" />
       <updated>1706888869732</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created GameBoard class">
+      <option name="closed" value="true" />
+      <created>1706892407629</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706892407629</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Created tests for gameboard creation">
+      <option name="closed" value="true" />
+      <created>1706892767256</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706892767256</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added getter for GameBoard">
+      <option name="closed" value="true" />
+      <created>1706892809598</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706892809598</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added general getValue function for BoardElement">
+      <option name="closed" value="true" />
+      <created>1707065707862</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065707862</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Created ButtonClickListener for game board tiles">
+      <option name="closed" value="true" />
+      <created>1707065744461</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065744461</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added increment and decrement functions for number of flags">
+      <option name="closed" value="true" />
+      <created>1707065776047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065776047</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Created main function for executing the game">
+      <option name="closed" value="true" />
+      <created>1707065814842</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065814842</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implemented getValue function for Mine object">
+      <option name="closed" value="true" />
+      <created>1707065841912</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065841912</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Created MinesweeperGUI for creating the UI">
+      <option name="closed" value="true" />
+      <created>1707065876728</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065876728</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Implemented getValue function for Number object">
+      <option name="closed" value="true" />
+      <created>1707065911611</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1707065911611</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +355,16 @@
     <MESSAGE value="Added tests for BoardElement functions" />
     <MESSAGE value="Created enum for difficulty levels" />
     <MESSAGE value="Removed custom difficulty enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed custom difficulty enum" />
+    <MESSAGE value="Created GameBoard class" />
+    <MESSAGE value="Created tests for gameboard creation" />
+    <MESSAGE value="Added getter for GameBoard" />
+    <MESSAGE value="Added general getValue function for BoardElement" />
+    <MESSAGE value="Created ButtonClickListener for game board tiles" />
+    <MESSAGE value="Added increment and decrement functions for number of flags" />
+    <MESSAGE value="Created main function for executing the game" />
+    <MESSAGE value="Implemented getValue function for Mine object" />
+    <MESSAGE value="Created MinesweeperGUI for creating the UI" />
+    <MESSAGE value="Implemented getValue function for Number object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented getValue function for Number object" />
   </component>
 </project>
