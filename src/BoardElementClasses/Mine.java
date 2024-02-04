@@ -4,8 +4,4 @@ public class Mine extends BoardElement {
         super(elementType);
     }
 
-    @Override
-    public int getValue() {
-        return -1;
-    }
 }
