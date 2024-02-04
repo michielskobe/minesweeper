@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Removed redundant getValue function of Mine class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="renamed packages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +36,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -47,34 +48,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MinesweeperGUI.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.BoardElementTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BoardElementTest.test02.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BoardElementTest.test05.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameBoardTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameBoardTest.test01.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestClass.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kobem/Documents/wepm2-minesweeper-master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MinesweeperGUI.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BoardElementTest.executor": "Run",
+    "JUnit.BoardElementTest.test02.executor": "Run",
+    "JUnit.BoardElementTest.test05.executor": "Run",
+    "JUnit.GameBoardTest.executor": "Run",
+    "JUnit.GameBoardTest.test01.executor": "Run",
+    "JUnit.TestClass.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kobem/Documents/wepm2-minesweeper-master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="UserInteractionClasses" />
@@ -98,7 +100,7 @@
     <configuration name="BoardElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Minesweeper" />
       <option name="PACKAGE_NAME" value="BoardElementClasses" />
-      <option name="MAIN_CLASS_NAME" value="BoardElementClasses.BoardElementTest" />
+      <option name="MAIN_CLASS_NAME" value="boardElementClasses.BoardElementTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,12 +110,12 @@
       <module name="Minesweeper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GameBoardClasses.*" />
+          <option name="PATTERN" value="gameBoardClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="GameBoardClasses" />
-      <option name="MAIN_CLASS_NAME" value="GameBoardClasses.GameBoardTest" />
+      <option name="MAIN_CLASS_NAME" value="gameBoardClasses.GameBoardTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,12 +125,12 @@
       <module name="Minesweeper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GameBoardClasses.*" />
+          <option name="PATTERN" value="gameBoardClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="GameBoardClasses" />
-      <option name="MAIN_CLASS_NAME" value="GameBoardClasses.GameBoardTest" />
+      <option name="MAIN_CLASS_NAME" value="gameBoardClasses.GameBoardTest" />
       <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -168,7 +170,7 @@
       <workItem from="1707068940080" duration="1645000" />
       <workItem from="1707073689761" duration="5455000" />
       <workItem from="1707080550004" duration="5441000" />
-      <workItem from="1707086018244" duration="1407000" />
+      <workItem from="1707086018244" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -418,14 +420,29 @@
       <option name="project" value="LOCAL" />
       <updated>1707085745781</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Removed redundant getValue function of Mine class">
+      <option name="closed" value="true" />
+      <created>1707087868958</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1707087868958</updated>
+    </task>
+    <task id="LOCAL-00033" summary="renamed packages">
+      <option name="closed" value="true" />
+      <created>1707088050084</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1707088050084</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created Number class as extension of BoardElement class" />
     <MESSAGE value="Moved BoardElement classes to separate folder" />
     <MESSAGE value="Renamed BOMB enum to MINE" />
     <MESSAGE value="Added test class for BoardElement classes and functions" />
@@ -450,6 +467,7 @@
     <MESSAGE value="Removed unused local variable" />
     <MESSAGE value="Removed unnecessary semicolon" />
     <MESSAGE value="Removed redundant getValue function of Mine class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant getValue function of Mine class" />
+    <MESSAGE value="renamed packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed packages" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package boardElementClasses;
 public class Number extends BoardElement {
-    protected int value;
+    protected final int value;
     public Number(ElementType elementType, int value) {
         super(elementType);
         this.value = value;

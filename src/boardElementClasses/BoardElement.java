@@ -1,6 +1,6 @@
 package boardElementClasses;
 public abstract class BoardElement {
-    protected ElementType elementType;
+    protected final ElementType elementType;
     protected boolean flag;
     protected boolean visibility;
 
