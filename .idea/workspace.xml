@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Added final modifier to BoardElement classes">
+    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Clean up MinesweeperGUI code">
       <change afterPath="$PROJECT_DIR$/src/userInteractionClasses/FontStyle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userInteractionClasses/MinesweeperGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInteractionClasses/MinesweeperGUI.java" afterDir="false" />
@@ -178,7 +178,7 @@
       <workItem from="1707073689761" duration="5455000" />
       <workItem from="1707080550004" duration="5441000" />
       <workItem from="1707086018244" duration="2350000" />
-      <workItem from="1707134158342" duration="7493000" />
+      <workItem from="1707134158342" duration="7817000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -452,14 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707088256539</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Clean up MinesweeperGUI code">
+      <option name="closed" value="true" />
+      <created>1707142363842</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1707142363842</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed BOMB enum to MINE" />
     <MESSAGE value="Added test class for BoardElement classes and functions" />
     <MESSAGE value="Added tests for BoardElement functions" />
     <MESSAGE value="Created enum for difficulty levels" />
@@ -484,6 +491,7 @@
     <MESSAGE value="Removed redundant getValue function of Mine class" />
     <MESSAGE value="renamed packages" />
     <MESSAGE value="Added final modifier to BoardElement classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added final modifier to BoardElement classes" />
+    <MESSAGE value="Clean up MinesweeperGUI code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean up MinesweeperGUI code" />
   </component>
 </project>

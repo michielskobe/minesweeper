@@ -38,7 +38,7 @@ public class MinesweeperGUI extends JFrame {
         setVisible(true);
     }
 
-    public void startGame(GameDifficulty difficulty){
+    private void startGame(GameDifficulty difficulty){
         switch (difficulty) {
             case BEGINNER -> configureWindow(BEGINNER_GAME_MENU_WIDTH, GAME_MENU_HEIGHT);
             case INTERMEDIATE -> configureWindow(INTERMEDIATE_GAME_MENU_WIDTH,GAME_MENU_HEIGHT);
@@ -82,7 +82,6 @@ public class MinesweeperGUI extends JFrame {
         add(mainPanel);
         setVisible(true);
     }
-
 
     /** Creates a button with the input text to start a game with an input difficulty and adds that button to the input panel, with a space below it. */
     private void createButton(String text, GameDifficulty difficulty, JPanel panel) {
