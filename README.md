@@ -40,12 +40,33 @@ $ cd ../out
 $ java Main
 ```
 
-A pop-up window should appear where you can start playing the minesweeper game.
+A pop-up window should appear where you can start playing the minesweeper game. 
+
+The previous steps can be executed automatically by running the play.sh Shell script. This can be done by one of the following commands:
+
+```bash
+$ sh play.sh
+```
+
+or
+
+```bash
+$ ./play.sh
+```
+
+or
+
+
+```bash
+$ bash play.sh
+```
+
 
 ## Play the game
 
 In the main menu, you get the possibility to select your difficulty level. The _Beginner_-level has a playing field of 8 by 8 tiles and 10 mines. The _Intermediate_-level has a playing field of 16 by 16 tiles and 40 mines. The _Expert_-level has a playing field of 30 by 16 tiles and 99 mines.
 
+```
 <p align="center">
   <img src = "https://github.com/michielskobe/minesweeper/assets/146984416/6c29b3bb-2b89-4b86-a38e-f5fb53a826ff" />
 </p>
