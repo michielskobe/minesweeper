@@ -8,7 +8,7 @@ The command line commands specified in this README-file are those for the Fedora
 
 ### Git
 
-Install git via their [website](https://git-scm.com/) or by running the following command:
+Install Git via their [website](https://git-scm.com/) or by running the following command:
 
 ```bash
 $ sudo dnf install git
