@@ -1,4 +1,4 @@
-# README: Minesweeper Java project
+# Minesweeper Java project [minesweeper]
 
 This is a very primitive version of a Minesweeper game I implemented in Java. The game is playable in a Graphical User Interface. I am not yet satisfied with the end result and would like to continue developping this project in the future if I have more free time. 
 
