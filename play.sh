@@ -1,3 +1,6 @@
+#!/bin/bash
+cd "${0%/*}"
+
 # Compile the Java files
 cd src
 javac -d ../out *.java
