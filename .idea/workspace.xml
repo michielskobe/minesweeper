@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Clean up MinesweeperGUI code" />
+    <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Clean up MinesweeperGUI code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/boardElementClasses/BoardElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boardElementClasses/BoardElementTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,50 +58,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MinesweeperGUI.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.BoardElementTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BoardElementTest.test02.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BoardElementTest.test05.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameBoardTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameBoardTest.test01.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestClass.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kobemichiels/Documents/repositories/minesweeper&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MinesweeperGUI.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BoardElementTest.executor": "Run",
+    "JUnit.BoardElementTest.test02.executor": "Run",
+    "JUnit.BoardElementTest.test03.executor": "Run",
+    "JUnit.BoardElementTest.test04.executor": "Run",
+    "JUnit.BoardElementTest.test05.executor": "Run",
+    "JUnit.BoardElementTest.test07.executor": "Run",
+    "JUnit.GameBoardTest.executor": "Run",
+    "JUnit.GameBoardTest.test01.executor": "Run",
+    "JUnit.TestClass.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "testing",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/kobemichiels/Documents/repositories/minesweeper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="UserInteractionClasses" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BoardElementTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Minesweeper" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinesweeperGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MinesweeperGUI" />
       <module name="Minesweeper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,32 +112,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardElementTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Minesweeper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gameBoardClasses.*" />
+          <option name="PATTERN" value="boardElementClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="GameBoardClasses" />
-      <option name="MAIN_CLASS_NAME" value="gameBoardClasses.GameBoardTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="boardElementClasses" />
+      <option name="MAIN_CLASS_NAME" value="boardElementClasses.BoardElementTest" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameBoardTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardElementTest.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Minesweeper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gameBoardClasses.*" />
+          <option name="PATTERN" value="boardElementClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="GameBoardClasses" />
-      <option name="MAIN_CLASS_NAME" value="gameBoardClasses.GameBoardTest" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="PACKAGE_NAME" value="boardElementClasses" />
+      <option name="MAIN_CLASS_NAME" value="boardElementClasses.BoardElementTest" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardElementTest.test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boardElementClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="boardElementClasses" />
+      <option name="MAIN_CLASS_NAME" value="boardElementClasses.BoardElementTest" />
+      <option name="METHOD_NAME" value="test07" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BoardElementTest" />
-        <item itemvalue="JUnit.GameBoardTest" />
-        <item itemvalue="JUnit.GameBoardTest.test01" />
-        <item itemvalue="Application.MinesweeperGUI" />
+        <item itemvalue="JUnit.BoardElementTest.test07" />
+        <item itemvalue="JUnit.BoardElementTest.test03" />
+        <item itemvalue="JUnit.BoardElementTest.test04" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +197,7 @@
       <workItem from="1707134158342" duration="7817000" />
       <workItem from="1716532352820" duration="505000" />
       <workItem from="1717666715328" duration="32000" />
+      <workItem from="1721896929654" duration="1958000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
