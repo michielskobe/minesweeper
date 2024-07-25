@@ -61,7 +61,7 @@ public class GameBoard {
     }
 
     /** Counts how many mines there are in the surrounding tiles and returns this value. */
-    private int generateNumberValue(int x, int y) {
+    int generateNumberValue(int x, int y) {
         int mineCount = 0;
         for(int m = -1; m <= 1; m++) {      //rows around tile counter
             for(int n = -1; n <= 1; n++) {      //columns around tile counter
