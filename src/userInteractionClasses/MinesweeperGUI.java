@@ -12,10 +12,15 @@ public class MinesweeperGUI extends JFrame {
     private static final int STARTUP_MENU_HEIGHT = 300;
     private static final int BEGINNER_GAME_MENU_WIDTH = 500;
     private static final int INTERMEDIATE_GAME_MENU_WIDTH = 900;
-    private static final int EXPERT_GAME_MENU_WIDTH = 1600;
+    private static final int EXPERT_GAME_MENU_WIDTH = 1700;
     private static final int GAME_MENU_HEIGHT = 675;
     private static final int GAME_FIELD_HEIGHT = 500;
     private static final int COMPONENT_SPACE = 10;
+    private static final int BUTTON_HEIGHT = 30;
+    private static final int BUTTON_WIDTH = 200;
+    private static final Color BACKGROUND_COLOR = new Color(22,24,23);
+    private static final Color TEXT_COLOR = Color.WHITE;
+    private static final Color TITLE_COLOR = new Color(249, 185, 90);
 
     public MinesweeperGUI(){
         createStartupMenu();
@@ -26,11 +31,12 @@ public class MinesweeperGUI extends JFrame {
         this.configureWindow(STARTUP_MENU_WIDTH, STARTUP_MENU_HEIGHT);
         homePanel = new JPanel();
         homePanel.setLayout(new BoxLayout(homePanel, BoxLayout.Y_AXIS));
+        homePanel.setBackground(BACKGROUND_COLOR);
         this.getContentPane().add(homePanel);
 
-        createLabel("Minesweeper", FontStyle.TITLE_FONT.getFont(), homePanel, 0);
-        createLabel("Implementation by Kobe Michiels", FontStyle.CREDIT_FONT.getFont(), homePanel, COMPONENT_SPACE);
-        createLabel("Please select your difficulty level to start the game.", FontStyle.LABEL_FONT_BOLD.getFont(), homePanel, COMPONENT_SPACE);
+        createLabel("Minesweeper", FontStyle.TITLE_FONT.getFont(), TITLE_COLOR, homePanel, 0);
+        createLabel("Implementation by Kobe Michiels", FontStyle.CREDIT_FONT.getFont(), TEXT_COLOR, homePanel, COMPONENT_SPACE);
+        createLabel("Please select your difficulty level to start the game.", FontStyle.LABEL_FONT_BOLD.getFont(), TEXT_COLOR, homePanel, COMPONENT_SPACE);
         createButton("Beginner", GameDifficulty.BEGINNER, homePanel);
         createButton("Intermediate", GameDifficulty.INTERMEDIATE, homePanel);
         createButton("Expert", GameDifficulty.EXPERT, homePanel);
@@ -54,6 +60,7 @@ public class MinesweeperGUI extends JFrame {
         int columns = gameBoard.getColumns();
 
         JPanel mainPanel = new JPanel(new BorderLayout());
+        mainPanel.setBackground(BACKGROUND_COLOR);
 
         JPanel gridPanel = new JPanel(new GridLayout(rows, columns));
         switch (gameBoard.getDifficulty()){
@@ -67,6 +74,8 @@ public class MinesweeperGUI extends JFrame {
             for (int column = 0; column < columns; column++) {
                 buttons[row][column] = new JButton();
                 buttons[row][column].setFont(FontStyle.BUTTON_FONT.getFont());
+                buttons[row][column].setForeground(TEXT_COLOR);
+                buttons[row][column].setBackground(BACKGROUND_COLOR);
                 buttons[row][column].addMouseListener(new ButtonClickListener(row, column, gameBoard, buttons));
                 gridPanel.add(buttons[row][column]);
             }
@@ -74,10 +83,11 @@ public class MinesweeperGUI extends JFrame {
 
         JPanel headerPanel = new JPanel();
         headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.Y_AXIS));
+        headerPanel.setBackground(BACKGROUND_COLOR);
         mainPanel.add(headerPanel, BorderLayout.NORTH);
-        createLabel("Minesweeper", FontStyle.TITLE_FONT.getFont(), headerPanel, 0);
-        createLabel("Difficulty: " + gameBoard.getDifficulty(), FontStyle.LABEL_FONT_PLAIN.getFont(), headerPanel, 0);
-        createLabel("Number of mines: " + gameBoard.getNumberOfMines(), FontStyle.LABEL_FONT_PLAIN.getFont(), headerPanel, 0);
+        createLabel("Minesweeper", FontStyle.TITLE_FONT.getFont(), TITLE_COLOR, headerPanel, 0);
+        createLabel("Difficulty: " + gameBoard.getDifficulty(), FontStyle.LABEL_FONT_PLAIN.getFont(), TEXT_COLOR, headerPanel, 0);
+        createLabel("Number of mines: " + gameBoard.getNumberOfMines(), FontStyle.LABEL_FONT_PLAIN.getFont(), TEXT_COLOR, headerPanel, 0);
 
         add(mainPanel);
         setVisible(true);
@@ -87,6 +97,14 @@ public class MinesweeperGUI extends JFrame {
     private void createButton(String text, GameDifficulty difficulty, JPanel panel) {
         JButton button = new JButton(text);
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
+        button.setPreferredSize(new Dimension(BUTTON_WIDTH, BUTTON_HEIGHT));
+        button.setMinimumSize(new Dimension(BUTTON_WIDTH, BUTTON_HEIGHT));
+        button.setMaximumSize(new Dimension(BUTTON_WIDTH, BUTTON_HEIGHT));
+        button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        button.setBackground(BACKGROUND_COLOR);
+        button.setBorderPainted(false);
+        button.setForeground(TEXT_COLOR);
+        button.setFont(FontStyle.BUTTON_FONT.getFont());
         button.addActionListener(e -> {
             startGame(difficulty);
             remove(homePanel);
@@ -96,10 +114,11 @@ public class MinesweeperGUI extends JFrame {
     }
 
     /** Creates a label with the input text and font and adds that label to the input panel, with a space below it. */
-    private void createLabel(String text, Font font, JPanel panel, int space){
+    private void createLabel(String text, Font font, Color color, JPanel panel, int space){
         JLabel label = new JLabel(text);
         label.setFont(font);
         label.setAlignmentX(Component.CENTER_ALIGNMENT);
+        label.setForeground(color);
         panel.add(label);
         panel.add(Box.createRigidArea(new Dimension(0, space)));
     }

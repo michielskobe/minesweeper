@@ -12,6 +12,7 @@ public class ButtonClickListener implements MouseListener {
     private final int x,y;
     private final GameBoard gameBoard;
     private final JButton[][] buttons;
+    private static final Color OPENED_TILE_BACKGROUND_COLOR = new Color(38, 39, 41);
     public ButtonClickListener(int x, int y, GameBoard gameBoard, JButton[][] buttons){
         this.x = x;
         this.y = y;
@@ -46,9 +47,11 @@ public class ButtonClickListener implements MouseListener {
         JButton button = buttons[x][y];
         if (!element.getFlag()){
             element.makeVisible();
-            button.setBackground(Color.WHITE);
+            button.setBackground(OPENED_TILE_BACKGROUND_COLOR);
+            button.setForeground(Color.WHITE);
             if (element.getElementType().equals(ElementType.MINE)){
                 button.setText("\uD83D\uDCA3");
+                button.setForeground(new Color(249, 185, 90));
                 endGameWithVictory(false);
                 JOptionPane.showMessageDialog(null, "GAME OVER");
 
@@ -102,7 +105,8 @@ public class ButtonClickListener implements MouseListener {
                 try {
                     if (board[x + m][y + n].getValue() == 0 && !board[x + m][y + n].getVisibility()) {
                         board[x + m][y + n].makeVisible();
-                        buttons[x + m][y + n].setBackground(Color.WHITE);
+                        buttons[x + m][y + n].setBackground(OPENED_TILE_BACKGROUND_COLOR);
+                        buttons[x + m][y + n].setForeground(Color.WHITE);
                         buttons[x + m][y + n].setText("");
                         buttons[x + m][y + n].setEnabled(false);
                         if (board[x + m][y + n].getFlag()) {
@@ -111,7 +115,8 @@ public class ButtonClickListener implements MouseListener {
                         this.openEmptyTiles((x + m), (y + n));
                     } else if (board[x + m][y + n].getElementType().equals(ElementType.NUMBER) && !board[x + m][y + n].getVisibility()) {
                         board[x + m][y + n].makeVisible();
-                        buttons[x + m][y + n].setBackground(Color.WHITE);
+                        buttons[x + m][y + n].setBackground(OPENED_TILE_BACKGROUND_COLOR);
+                        buttons[x + m][y + n].setForeground(Color.WHITE);
                         buttons[x + m][y + n].setText(String.valueOf(board[x + m][y + n].getValue()));
                         buttons[x + m][y + n].setEnabled(false);
                         if (board[x + m][y + n].getFlag()) {
@@ -132,7 +137,8 @@ public class ButtonClickListener implements MouseListener {
                 button.setEnabled(false);
                 if (isVictory){
                     element.makeVisible();
-                    button.setBackground(Color.WHITE);
+                    button.setBackground(OPENED_TILE_BACKGROUND_COLOR);
+                    button.setForeground(Color.WHITE);
                     if (element.getValue() == -1){
                         button.setText("\uD83D\uDCA3");
                     } else if (element.getValue() == 0) {
@@ -146,7 +152,8 @@ public class ButtonClickListener implements MouseListener {
                     if (element.getElementType().equals(ElementType.MINE)){
                         button.setText("\uD83D\uDCA3");
                         element.makeVisible();
-                        button.setBackground(Color.WHITE);
+                        button.setBackground(OPENED_TILE_BACKGROUND_COLOR);
+                        button.setForeground(new Color(249, 185, 90));
                     }
 
                 }
