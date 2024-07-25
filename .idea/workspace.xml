@@ -98,7 +98,7 @@
       <recent name="UserInteractionClasses" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameBoardTest">
+  <component name="RunManager" selected="JUnit.BoardElementTest">
     <configuration name="BoardElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Minesweeper" />
       <option name="PACKAGE_NAME" value="BoardElementClasses" />
@@ -173,10 +173,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardElementTest" />
         <item itemvalue="JUnit.GameBoardTest" />
         <item itemvalue="JUnit.GameBoardTest.test03" />
         <item itemvalue="JUnit.GameBoardTest.testFlagging" />
-        <item itemvalue="JUnit.BoardElementTest" />
         <item itemvalue="JUnit.BoardElementTest.test07" />
       </list>
     </recent_temporary>
