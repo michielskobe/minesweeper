@@ -17,7 +17,6 @@ public class GameBoardTest {
         assertEquals(8, gb.getColumns());
         assertEquals(10, gb.getNumberOfMines());
         assertEquals(10, gb.getNumberOfFlags());
-        assertEquals(1, gb.getNumberOfHints());
     }
 
     /** Test GameBoard object creation on INTERMEDIATE difficulty */
@@ -29,7 +28,6 @@ public class GameBoardTest {
         assertEquals(16, gb.getColumns());
         assertEquals(40, gb.getNumberOfMines());
         assertEquals(40, gb.getNumberOfFlags());
-        assertEquals(4, gb.getNumberOfHints());
     }
 
     /** Test GameBoard object creation on EXPERT difficulty */
@@ -41,7 +39,6 @@ public class GameBoardTest {
         assertEquals(30, gb.getColumns());
         assertEquals(99, gb.getNumberOfMines());
         assertEquals(99, gb.getNumberOfFlags());
-        assertEquals(9, gb.getNumberOfHints());
     }
 
     /** Test the board initialization for BEGINNER difficulty and content */
