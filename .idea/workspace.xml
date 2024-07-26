@@ -9,8 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cc84f7a0-bd9e-4e09-a2a1-33640eb70cdc" name="Changes" comment="Clean up MinesweeperGUI code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameBoardClasses/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameBoardClasses/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userInteractionClasses/ButtonClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInteractionClasses/ButtonClickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInteractionClasses/MinesweeperGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInteractionClasses/MinesweeperGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +226,7 @@
       <workItem from="1721896929654" duration="3638000" />
       <workItem from="1721914402521" duration="862000" />
       <workItem from="1721928675566" duration="2062000" />
-      <workItem from="1721979153973" duration="3188000" />
+      <workItem from="1721979153973" duration="10461000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
