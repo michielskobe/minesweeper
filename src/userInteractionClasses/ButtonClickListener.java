@@ -1,45 +1,34 @@
 package userInteractionClasses;
 
-import boardElementClasses.BoardElement;
-import boardElementClasses.ElementType;
+import boardElementClasses.*;
 import gameBoardClasses.GameBoard;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import static javax.swing.JOptionPane.*;
 
-public class ButtonClickListener implements MouseListener {
+public class ButtonClickListener extends MouseAdapter {
     private final int x,y;
     private final GameBoard gameBoard;
     private final JButton[][] buttons;
     private static final Color OPENED_TILE_BACKGROUND_COLOR = new Color(38, 39, 41);
-    public ButtonClickListener(int x, int y, GameBoard gameBoard, JButton[][] buttons){
+    private final MinesweeperGUI minesweeperGUI;
+
+    public ButtonClickListener(int x, int y, GameBoard gameBoard, JButton[][] buttons, MinesweeperGUI gui){
         this.x = x;
         this.y = y;
         this.gameBoard = gameBoard;
         this.buttons = buttons;
+        this.minesweeperGUI = gui;
     }
-    @Override
-    public void mouseClicked(MouseEvent e) {
-        int buttonClicked = e.getButton();
-        if (buttonClicked == MouseEvent.BUTTON1) {
-            leftClickButtonAction(x, y);
-        } else if (buttonClicked == MouseEvent.BUTTON3) {
-            rightClickButtonAction(x, y);
-        }
-    }
-
     @Override
     public void mousePressed(MouseEvent e) {
-    }
-    @Override
-    public void mouseReleased(MouseEvent e) {
-    }
-    @Override
-    public void mouseEntered(MouseEvent e) {
-    }
-    @Override
-    public void mouseExited(MouseEvent e) {
+        if (SwingUtilities.isLeftMouseButton(e)) {
+            leftClickButtonAction(x, y);
+        } else if (SwingUtilities.isRightMouseButton(e)) {
+            rightClickButtonAction(x, y);
+        }
     }
 
     public void leftClickButtonAction(int x, int y){
@@ -53,8 +42,15 @@ public class ButtonClickListener implements MouseListener {
                 button.setText("\uD83D\uDCA3");
                 button.setForeground(new Color(249, 185, 90));
                 endGameWithVictory(false);
-                JOptionPane.showMessageDialog(null, "GAME OVER");
-
+                String[] options = {"Retry?", "Exit"};
+                int selectedOption = JOptionPane.showOptionDialog(null, "GAME OVER", "Minesweeper", OK_CANCEL_OPTION, QUESTION_MESSAGE, null, options, OK_OPTION);
+                if (selectedOption == OK_OPTION){
+                    minesweeperGUI.dispose();
+                    new MinesweeperGUI();
+                }
+                else {
+                    minesweeperGUI.dispose();
+                }
             }
             else {
                 if (element.getValue() == 0){
@@ -84,7 +80,15 @@ public class ButtonClickListener implements MouseListener {
                     gameBoard.decrementNumberOfFlags();
                     if (checkForVictory()){
                         endGameWithVictory(true);
-                        JOptionPane.showMessageDialog(null, "Congratulations, you won!");
+                        String[] options = {"Retry?", "Exit"};
+                        int selectedOption = JOptionPane.showOptionDialog(null, "Congratulations, you won!", "Minesweeper", OK_CANCEL_OPTION, QUESTION_MESSAGE, null, options, OK_OPTION);
+                        if (selectedOption == OK_OPTION){
+                            minesweeperGUI.dispose();
+                            new MinesweeperGUI();
+                        }
+                        else {
+                            minesweeperGUI.dispose();
+                        }
                     }
                     else {
                         button.setForeground(Color.red);

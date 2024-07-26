@@ -23,12 +23,15 @@ public class MinesweeperGUI extends JFrame {
     private static final Color TITLE_COLOR = new Color(249, 185, 90);
 
     public MinesweeperGUI(){
+        this.getContentPane().removeAll();
         createStartupMenu();
+        this.revalidate();
+        this.repaint();
     }
 
     /** Creates a window that opens when the program is run and allows the user to start the game. */
     private void createStartupMenu(){
-        this.configureWindow(STARTUP_MENU_WIDTH, STARTUP_MENU_HEIGHT);
+        configureWindow(STARTUP_MENU_WIDTH, STARTUP_MENU_HEIGHT);
         homePanel = new JPanel();
         homePanel.setLayout(new BoxLayout(homePanel, BoxLayout.Y_AXIS));
         homePanel.setBackground(BACKGROUND_COLOR);
@@ -76,7 +79,7 @@ public class MinesweeperGUI extends JFrame {
                 buttons[row][column].setFont(FontStyle.BUTTON_FONT.getFont());
                 buttons[row][column].setForeground(TEXT_COLOR);
                 buttons[row][column].setBackground(BACKGROUND_COLOR);
-                buttons[row][column].addMouseListener(new ButtonClickListener(row, column, gameBoard, buttons));
+                buttons[row][column].addMouseListener(new ButtonClickListener(row, column, gameBoard, buttons, this));
                 gridPanel.add(buttons[row][column]);
             }
         }
