@@ -142,7 +142,7 @@ public class MinesweeperGUI extends JFrame {
 
         // Set button text:
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setForeground(TEXT_COLOR);
+        button.setForeground(TITLE_COLOR);
         button.setFont(FontStyle.BUTTON_FONT.getFont());
 
         // Set button layout:
