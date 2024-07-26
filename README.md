@@ -44,25 +44,25 @@ This Shell script compiles the Java files and runs the main class. A pop-up wind
 In the main menu, you get the possibility to select your difficulty level. The _Beginner_-level has a playing field of 8 by 8 tiles and 10 mines. The _Intermediate_-level has a playing field of 16 by 16 tiles and 40 mines. The _Expert_-level has a playing field of 30 by 16 tiles and 99 mines.
 
 <p align="center">
-  <img src = "https://github.com/michielskobe/minesweeper/assets/146984416/6c29b3bb-2b89-4b86-a38e-f5fb53a826ff" />
+  <img src = "https://github.com/user-attachments/assets/fb5556a7-a163-4d3a-9461-0769b4657e40" />
 </p>
 
 After you select a difficulty level, the game board will open and you can start playing the game. You can open a tile by left-clicking it. You can place a flag on a suspected mine by right-clicking it.
 
 <p align="center">
-  <img src = "https://github.com/michielskobe/minesweeper/assets/146984416/c1bc76a8-6160-4425-b67f-460ed77a1bf2" />
+  <img src = "https://github.com/user-attachments/assets/828a136a-9455-48ba-962b-5c47578b0bfa" />
 </p>
 
-When you accidentally open a mine, a _GAME OVER_-message will appear.
+When you open a mine, a _GAME OVER_-message will appear and you can try again.
 
 <p align="center">
-  <img src = "https://github.com/michielskobe/minesweeper/assets/146984416/46cc91b3-cb87-41cb-b373-69d5ab14ae6e" />
+  <img src = "https://github.com/user-attachments/assets/e2fbd00c-4589-4211-b05d-b6e579e51a6a" />
 </p>
 
-When you successfully flaged all mines, a congratulations-message will appear.
+When you successfully flaged all mines, a congratulations-message will appear and you can start a new game.
 
 <p align="center">
-  <img src = "https://github.com/michielskobe/minesweeper/assets/146984416/26ca8236-9461-4cfa-adb5-29abeaf8fc15" />
+  <img src = "https://github.com/user-attachments/assets/f83dad5f-e95a-4983-9b89-b10fd34d9837" />
 </p>
 
 
